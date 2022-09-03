@@ -1,0 +1,79 @@
+@import url();
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    min-height: 100vh; 
+    background: linear-gradient(rgb(27, 27, 27), rgb(145, 145, 145));
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+    left: 110px;
+}
+header ul li a:hover , 
+header ul li a .active 
+{
+    background: #fff;
+    color: rgb(16, 192, 236); 
+}
+p
+{
+    font-family: Recollect;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+.contenedor{
+    width: 1000px;
+    max-width: 1000%;
+    background:rgb(252, 0, 0) ;
+}
+img  {
+    width: 60%;
+    height: 35%;
+    position: fixed;
+    left: 30px;
+   }

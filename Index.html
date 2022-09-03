@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>Papeleria y Regalos El CIRCULO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name=  "viewport" content="width=device-width, use-scalable=no, initial-scale=1.0, minimun-scale=1.0, minimun-scale= 1.0">
+</head>
+<body>
+  
+      <header>
+        <a href="index.html" class="logo"></a><ul>
+            <li> <a href="index.html">inicio</a></li>
+            <li> <a href="index2.html" class="active">Informacion</a>
+        </ul>
+    </header> 
+
+<h3></sup></h3>
+
+<p>Encontraras gran variedad de utiles escolares y regalos en esta papeleria</p> 
+<style type="text/css"> 
+* {
+  text-align:left
+}
+  </style>
+  <div class="contenedor"></div>
+  <img id='imagen' src="img/fotito1.jpg"><br>
+</div>
+<script>
+
+//paso 1 --> crear el array de imagenes
+var arrayImagenes = ["fotito1.jpg", "fotito2.jpg", "fotito3.jpg", "fotito4.jpg", "fotito5.jpg", "fotito6.jpg", "fotito7.jpg"]
+
+//que imagen mostramos
+var imagenActual = 0;
+
+//Cada 2 segundos se ejecute esta funcion
+var temporizador;
+temporizador = setInterval(cambiarImagen, 1000)
+
+//paso 2: listeners de los botones de anterior y siguiente
+document.getElementById("anterior").addEventListener("click" , cambiarImagen);
+document.getElementById("siguiente").addEventListener("click" , cambiarImagen); 
+document.getElementById('imagen').addEventlistener('mouseover' , pararTemporizador)
+document.getElementById('imagen').addEventListener('mouseout' , iniciarTemporizador)
+
+//paso 3: Definir la función
+function cambiarImagen() {
+var boton = this.id;
+if(boton!= undefined) {
+clearInterval(temporizador);
+temporizador=setInterval(cambiarImagen, 1000)
+}
+if(boton == 'anterior') {
+imagenActual --;
+if(imagenActual < 0) {
+imagenActual = arrayImagenes.length -1;
+}
+} else {
+imagenActual ++;
+if(imagenActual == arrayImagenes.length) {
+imagenActual = 0;
+}
+}
+var imagenAMostrar = arrayImagenes [imagenActual];
+document.getElementById('imagen').src = 'img/' + imagenAMostrar;
+}
+function pararTemporizador() {
+   clearInterval(temporizador);
+}
+function iniciarTemporizador () {
+temporizador=setInterval(cambiarImagen, 1000)
+}
+</script>
+  
+</body>
+</html>

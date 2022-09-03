@@ -1,0 +1,82 @@
+@import url();
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    min-height: 100vh; 
+    background: linear-gradient(rgb(27, 27, 27), rgb(145, 145, 145));
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+color: rgb(255, 255, 255);
+font-weight: 700;
+text-decoration: none;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(48, 48, 48);
+    border-radius: 20px;
+}
+header ul li a:hover , 
+header ul li a .active 
+{
+    background: rgb(87, 87, 87);
+    color: rgb(16, 192, 236); 
+}
+h2 
+{
+    font-family: roset ;
+    font-size: 4em;
+    color: rgb(16, 192, 236); 
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+p
+{
+    font-family: Recollect;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 27%;
+    top: 40%;
+}
+   h5
+{
+    font-family: roset ;
+    font-size: 1em;
+    color: rgb(207, 253, 0); 
+}
+    
